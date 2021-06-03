@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+        ul {
+            font-family: 'DM Mono', monospace;
+            padding: 0;
+            list-style: none;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            & li {
+                width: auto;
+                background-color: #A75813;
+                text-align: right;
+                transition: .6s;
+                display: inline-block;
+                & a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #fff;
+                    display: inline-block;
+                    height: 100%;
+                    width: 120px;
+                    margin-left: -84px;
+                    transition: .3s;
+                    & i {
+                        padding: 10px;
+                    }
+                  }
+            }
+            .one {
+                border-radius: 0 10px 0 0;
+            }
+            .one:hover {
+                border-radius: 0;
+            }
+            .five {
+                border-radius: 0 0 10px 0;
+            }
+            .five:hover {
+                border-radius: 0;
+            }
+            li:hover a {
+                margin-left: 0;
+            }
+            .one:hover a {
+                margin-left: -30px;
+            }
+            .two:hover a,
+            .four:hover a {
+                margin-left: -20px;
+            }
+        }
+    }
